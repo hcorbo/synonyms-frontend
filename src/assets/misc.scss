@@ -1,0 +1,144 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.flex-center-both {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.flex-scroll-y {
+    flex-basis: 0;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.default-transition {
+    transition: all 200ms ease-in-out;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+// margins and paddings
+
+// ------ MARGINS ------
+
+.m-auto {
+    margin: auto;
+}
+
+// top
+
+.mt-16 {
+    margin-top: 1rem;
+}
+
+.mt-20 {
+    margin-top: 1.25rem;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+// right
+
+.mr-16 {
+    margin-right: 1rem;
+}
+
+.mr-20 {
+    margin-right: 1.25rem;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+// bottom
+
+.mb-10 {
+    margin-bottom: 0.625rem;
+}
+
+.mb-16 {
+    margin-bottom: 1rem;
+}
+
+.mb-20 {
+    margin-bottom: 1.25rem;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+// left
+
+.ml-16 {
+    margin-left: 1rem;
+}
+
+.ml-20 {
+    margin-left: 1.25rem;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+
+// ------ PADDINGS ------
+
+.p-16 {
+    padding: 1rem;
+}

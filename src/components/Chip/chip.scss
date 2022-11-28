@@ -1,0 +1,14 @@
+@import "src/assets/colors";
+
+.custom-chip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0.1875rem 0.625rem;
+    font-size: 1rem;
+    color: $mainBlue;
+    border: 1px solid $mainBlue;
+    background: transparent;
+}

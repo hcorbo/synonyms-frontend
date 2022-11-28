@@ -1,0 +1,154 @@
+@import "../../assets/colors";
+
+.custom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.75rem 1.5625rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in 220ms;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    user-select: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.transparent {
+        border: 1px solid transparent;
+        background: transparent;
+        color: #424242;
+
+        &:hover {
+            color: #909090;
+        }
+    }
+
+    &.transparent-blue {
+        background: transparent;
+        color: $mainBlue;
+        border: 1px solid $mainBlue;
+
+        .spinner-container {
+            span {
+                border-color: $mainBlue;
+                border-bottom-color: transparent;
+            }
+        }
+
+        &:hover {
+            background: $mainBlue;
+            color: white;
+
+            &.loading {
+                span {
+                    border-color: $white;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+
+        &:active {
+            background: $darkMainBlue;
+        }
+    }
+
+    &.blue {
+        background: $mainBlue;
+        color: $white;
+        border: 1px solid $mainBlue;
+
+        .spinner-container {
+            span {
+                border-color: $mainBlue;
+                border-bottom-color: transparent;
+            }
+        }
+
+        &:hover {
+            background: $darkMainBlue;
+            color: $white;
+
+            &.loading {
+                span {
+                    border-color: $white;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+
+        &:active {
+            background: $darkMainBlue;
+        }
+    }
+
+    &.red {
+        background: $red;
+        color: $white;
+        border: 1px solid $red;
+
+        .spinner-container {
+            span {
+                border-color: $red;
+                border-bottom-color: transparent;
+            }
+        }
+
+        &:hover {
+            background: $darkRed;
+            color: $white;
+
+            &.loading {
+                span {
+                    border-color: $white;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+
+        &:active {
+            background: $darkRed;
+        }
+    }
+
+    &.transparent-red {
+        background: transparent;
+        color: $red;
+        border: 1px solid $red;
+
+        .spinner-container {
+            span {
+                border-color: $red;
+                border-bottom-color: transparent;
+            }
+        }
+
+        &:hover {
+            background: $red;
+            color: $white;
+
+            &.loading {
+                span {
+                    border-color: $white;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+
+    .spinner-container {
+        display: flex;
+        margin-left: 0.5rem;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+}
